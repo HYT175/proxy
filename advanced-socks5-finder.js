@@ -1,7 +1,9 @@
 const axios = require("axios");
 const { SocksClient } = require("socks");
 const fs = require("fs");
-const chalk = require("chalk");
+
+// Dinamik import (ESM modülü kullanımı)
+const chalk = await import('chalk'); // chalk'ı dinamik olarak içeri aktarıyoruz
 
 // SOCKS proxy kaynakları
 const sources = [
